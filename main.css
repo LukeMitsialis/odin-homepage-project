@@ -1,0 +1,51 @@
+:root {
+    /* lights */
+    --light: #E6E7EB;
+    --lighter: #DDDFE5;
+    --lightest: #F9FAFB;
+    /* darks */
+    --charcoal: #1F2937;
+    --grey: #6E747D;
+    --darkest: #1F2937;
+
+    /* color */
+    --blue: #3B83F6;
+}
+
+.top-nav {}
+
+.hero-section {}
+
+.hero-header-text {}
+
+.hero-description-text {}
+
+.primary-cta-btn {}
+
+.hero-img {}
+
+.info-blocks {}
+
+.info-header-text {}
+
+.info-block {}
+
+.info-spot-illustration {}
+
+.info-text {}
+
+.quote-block {}
+
+.quote-block-text {}
+
+.quote-citation-text {}
+
+.cta-block {}
+
+.cta-header-text {}
+
+.cta-description-text {}
+
+.secondary-cta-btn {}
+
+.main-footer {}
