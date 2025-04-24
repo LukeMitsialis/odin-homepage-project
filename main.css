@@ -3,13 +3,31 @@
     --light: #E6E7EB;
     --lighter: #DDDFE5;
     --lightest: #F9FAFB;
+
     /* darks */
-    --charcoal: #1F2937;
     --grey: #6E747D;
+    --charcoal: #1F2937;
     --darkest: #1F2937;
 
     /* color */
     --blue: #3B83F6;
+
+    /* text */
+    --txt-xs: 12px;
+    --txt-sm: 16px;
+    --txt-md: 18px;
+    --txt-lg: 24px;
+    --txt-xl: 36px;
+    --txt-xxl: 48px;
+
+    /* 4px system */
+    --spc-xs: 4px;
+    --spc-sm: 8px;
+    --spc-md: 12px;
+    --spc-lg: 16px;
+    --spc-xl: 24px;
+    --spc-xxl: 32px;
+    --spc-xxxl: 40px;
 }
 
 .top-nav {}
