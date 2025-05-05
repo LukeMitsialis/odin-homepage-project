@@ -1,6 +1,6 @@
 :root {
     /* lights */
-    --light: #E6E7EB;
+    --light: #c4c7cc;
     --lighter: #DDDFE5;
     --lightest: #F9FAFB;
 
@@ -30,9 +30,101 @@
     --spc-xxxl: 40px;
 }
 
-.top-nav {}
 
-.hero-section {}
+.roboto-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    padding: var(--spc-lg) 10%;
+    background-color: var(--charcoal);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav-header {
+    font-size: var(--txt-lg);
+    color: var(--lightest);
+    cursor: default;
+}
+
+.top-nav-links {
+    display: flex;
+    gap: var(--spc-xl);
+    color: var(--light);
+    list-style: none;
+    cursor: pointer;
+
+    & :hover {
+        color: var(--lightest);
+    }
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    padding: var(--spc-lg) 10%;
+    background-color: var(--charcoal);
+    d
+}
 
 .hero-header-text {}
 
