@@ -56,20 +56,23 @@ select {
 .top-nav {
     display: flex;
     flex-direction: row;
-    padding: var(--spc-lg) 10%;
+    padding: 0 10%;
     background-color: var(--charcoal);
     justify-content: space-between;
     align-items: center;
 }
 
+
 .top-nav-header {
     font-size: var(--txt-lg);
+    line-height: 1;
     color: var(--lightest);
     cursor: default;
 }
 
 .top-nav-links {
     display: flex;
+    line-height: 1;
     gap: var(--spc-xl);
     color: var(--light);
     list-style: none;
@@ -84,20 +87,24 @@ select {
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: var(--spc-lg);
     padding: var(--spc-xxl) 10%;
     background-color: var(--charcoal);
     height: auto;
 }
+
+
 
 .hero-header-text {
     color: var(--lightest);
     font-size: var(--txt-xxl);
     font-weight: 900;
     line-height: 1;
+    margin: 0;
 }
 
 .hero-description-text {
-
+    margin: var(--spc-sm) 0;
     color: var(--light);
 }
 
@@ -109,6 +116,7 @@ select {
     border-radius: var(--spc-sm);
     transition: all ease-in-out 100ms;
     cursor: pointer;
+    margin: var(--spc-lg) 0 0 0;
 
     &:hover {
         background-color: var(--blue-hover);
@@ -123,10 +131,11 @@ select {
 
 .hero-section img {
     display: block;
+    width: 100%;
     height: 100%;
     min-height: 200px;
-    width: 100%;
     background-color: var(--grey);
+    border-radius: var(--spc-xs);
 }
 
 .info-blocks {}
@@ -154,3 +163,25 @@ select {
 .secondary-cta-btn {}
 
 .main-footer {}
+
+
+
+@media screen and (max-width:750px) {
+    .hero-section {
+        transition: all ease-in 250ms;
+        grid-template-columns: 1fr;
+        row-gap: var(--spc-sm);
+        padding: var(--spc-xxl) 10%;
+    }
+
+    .hero-header-text,
+    .hero-description-text {
+        padding: var(--spc-xs) 0;
+        margin: 0;
+    }
+
+    .primary-cta-btn {
+        margin: var(--spc-lg) 0;
+    }
+
+}
